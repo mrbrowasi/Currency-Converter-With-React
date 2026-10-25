@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Currency Converter 💱
 
 A simple and responsive Currency Converter built with **React** and **Vite**. This application helps users convert amounts between different currencies through an easy-to-use interface.
@@ -55,3 +56,6 @@ Open the local URL shown in your terminal to use the application.
 ---
 
 If you find this project useful, consider giving the repository a ⭐ on GitHub.
+=======
+# Currency-Converter-With-React
+>>>>>>> 7e0476105b917d26803e597f1a838448ee282978
