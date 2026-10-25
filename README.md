@@ -1,16 +1,57 @@
-# React + Vite
+# Currency Converter 💱
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive Currency Converter built with **React** and **Vite**. This application helps users convert amounts between different currencies through an easy-to-use interface.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Convert amounts between currencies
+- Simple and user-friendly interface
+- Responsive design
+- Built with React
+- Fast development and build using Vite
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- Vite
+- JavaScript
+- HTML5
+- CSS3
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Follow these steps to run the project locally.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/mrbrowasi/Currency-Converter-With-React.git
+```
+
+### 2. Open the project folder
+
+```bash
+cd Currency-Converter-With-React
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in your terminal to use the application.
+
+## 👨‍💻 Author
+
+**GitHub:** [@mrbrowasi](https://github.com/mrbrowasi)
+
+---
+
+If you find this project useful, consider giving the repository a ⭐ on GitHub.
