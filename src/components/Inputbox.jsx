@@ -12,6 +12,9 @@ function InputBox({
     className = ""
 }) {
     const amountinputid = useId()
+    const currencyDisplay = new Intl.DisplayNames(["en"], {
+        type: "currency",
+    });
     return (
         <div className = {`bg-white p-3 rounded-lg text-sm flex ${className}`}>
             <div className='w-1/2'>
@@ -28,22 +31,29 @@ function InputBox({
                 value = {amount}
                 onChange={(e) => onAmountChange && onAmountChange?.(Number(e.target.value))}
             />
-            <div className='w-1/2 flex flex-wrap justify-end text-right '>
+            <div className='w-1/2 flex flex-wrap justify-end text-right'>
                 <p className='text-black/40 mb-2 w-full'> Currency Type</p>
-                <select className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none"
-                value={selectCurrency}
-                onChange={(e) => onCurrencyChange && onCurrencyChange?.(e.target.value)} 
-                disabled={currencyDisable}
+                <select className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none w-40"
+                    value={selectCurrency}
+                    onChange={(e) => onCurrencyChange && onCurrencyChange?.(e.target.value)} 
+                    disabled={currencyDisable}
                 >
-                    {currencyOptions.map((currency) => (
-                        <option 
-                            key={currency} 
-                            value={currency}
-                        > 
-                            {/*    remember the key always in loop */}
-                            {currency.toUpperCase()}
-                        </option>
-                    ))}
+                    {currencyOptions.map((currency) => {
+                        const code = currency.toUpperCase();
+                        let name = code;
+                        try {
+                            name = new Intl.DisplayNames(["en"], {
+                                type: "currency",
+                            }).of(code) || code;
+                        } catch (error) {
+                            name = code;
+                        }
+    return (
+        <option key={currency} value={currency}>
+            {code} ({name})
+        </option>
+    );
+})}
                 </select>
             </div>
         </div>
